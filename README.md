@@ -1,4 +1,4 @@
-dokku-monorepo
+bootlegged dokku-monorepo
 ===============
 
 Dokku plugin for monorepo setups.
@@ -6,7 +6,7 @@ Dokku plugin for monorepo setups.
 ## Install
 
 ```
-dokku plugin:install https://github.com/iamale/dokku-monorepo
+dokku plugin:install https://github.com/PAStheLoD/dokku-monorepo
 ```
 
 ## Usage
@@ -20,16 +20,17 @@ myapp2
 
 The file .dokku-monorepo contains paths for applications to be deployed:
 ```
-first=myapp1
-second=myapp2/backend
+# watch out for ordering, put the less specific (shorter) name at the end
+
+app-worker=myapp2/backend
+app=myapp1
 ```
 
 The part before `=` is used to identify the dokku application. For example, here:
 ```
 $ git remote -v
-first             dokku@dokku.me:example-first
-first-staging     dokku@dokku.me:example-first-staging
-second            dokku@dokku.me:example-second
+app             dokku@dokku.me:example-app
+app-worker      dokku@dokku.me:example-app-worker
 ```
 
 the `example-first` and `example-staging-first` applications would be deployed from the `myapp1` folder.
