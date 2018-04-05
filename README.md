@@ -50,3 +50,7 @@ Total 253 (delta 117), reused 233 (delta 109)
 ```
 
 It's that easy!
+
+### Dockerfile in subfolder
+
+By default Dokku only looks for Dockerfiles in the root of the repository. If one/all of your applications are deployed with a Dockerfile, you can use the [dokku-dockerfile](https://github.com/mimischi/dokku-dockerfile) plugin to point Dokku to the right folder.
