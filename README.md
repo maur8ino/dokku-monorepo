@@ -1,4 +1,4 @@
-bootlegged dokku-monorepo
+dokku-monorepo
 ===============
 
 Dokku plugin for monorepo setups.
@@ -6,7 +6,7 @@ Dokku plugin for monorepo setups.
 ## Install
 
 ```
-dokku plugin:install https://github.com/PAStheLoD/dokku-monorepo
+dokku plugin:install https://github.com/maur8ino/dokku-monorepo
 ```
 
 ## Usage
